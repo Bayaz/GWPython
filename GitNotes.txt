@@ -1,0 +1,21 @@
+git add .
+git commit -am "summary of additions..."
+
+git push origin master
+
+
+#another notres
+pip freeze > requirements.txt 
+
+#to merge from another computer without losing work
+git stash
+git pull origin master
+git stash pop
+
+
+
+
+
+#to link to github repository....must do first for git push origin master to work
+
+git remote add origin "https address of repository" # no  ""s required
