@@ -22,6 +22,8 @@ using the str() function")
 i = str(i)
 s = str(s)
 
+raw_input("hit RETURN to continue:")
+
 print("i is this type:")
 print(type(i))
 
@@ -29,6 +31,8 @@ print("s is this type:")
 print(type(s))
 
 print("i concatenated with s is : {}".format(i + s))
+
+raw_input("hit RETURN to continue:")
 
 print("Now concatenate i with \"4\"")
 print("{} concatenated with {} is: {}".format(i, '4', i + '4'))
@@ -44,6 +48,8 @@ print("Using / and // for division results in the same value \n\
 when the integers or floats have have no remainder, they are \n \
 both integers, the only time they are different is when divinding \n\
 floats with remainders in which case // will return floor division ")
+
+raw_input("hit RETURN to continue:")
 
 print (""" Here are some examples:\n\n\
 print 5 / 3 \n

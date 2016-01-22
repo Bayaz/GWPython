@@ -18,4 +18,5 @@ for word,count in list(counts.items()):
         bigword = word 
         bigcount = count 
 
-print(bigword, bigcount)
+print("The word that show up the most is '{}', which shows up {} \
+times".format(bigword, bigcount))
