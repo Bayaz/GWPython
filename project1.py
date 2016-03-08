@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 infile = "test1.txt"
+wordfind = 'the'
 
 def numberOfWords(infile):
 	num_words = 0
@@ -44,5 +45,31 @@ def countWord(infile):
 	return stripped_words, len(stripped_words)
 d = countWord(infile)
 print d
+
+def wordCounta(infile, wordfind):
+	try:
+		count_file = open(infile)
+	except:
+		print "File cannot be opened or doesn't exist in directory", infile
+		exit()
+
+	word_counts = dict()
+	for line in count_file:
+		words = line.split()
+		for word in words:
+			if word not in word_counts:
+				word_counts[word] = 1
+			else:
+				word_counts[word] += 1
+
+	print word_counts
+	try:
+		wordfind = word_counts[wordfind]
+		print wordfind
+	except:
+		print "That word does not exist in the file"
+		exit()
+
+wordCounta(infile, wordfind)
 
 
