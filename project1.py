@@ -23,7 +23,7 @@ def numberOfLines(infile):
 b = numberOfLines(infile)
 print b
 
-def numberOfChars(infile):
+def CountCharacters(infile):
 	num_chars = 0
 	num_lines = 0
 	with open(infile) as file:
@@ -32,7 +32,7 @@ def numberOfChars(infile):
 			num_chars += len(line)
 	return num_chars - num_lines
 
-c = numberOfChars(infile)
+c = CountCharacters(infile)
 print c
 
 def countWord(infile):

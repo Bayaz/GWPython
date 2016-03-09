@@ -1,5 +1,5 @@
-infile = "testfile.txt"
-wordfind = 'Line'
+infile = "test1.txt"
+wordfind = 'at'
 
 def CountOccurences(infile, wordfind):
     total = 0
