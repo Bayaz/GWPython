@@ -12,6 +12,6 @@ def CountOccurences(infile, wordfind):
                 if el == wordfind:
                       total += 1
 
-    print total
+    return total
 
 CountOccurences(infile, wordfind)

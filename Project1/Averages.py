@@ -39,16 +39,15 @@ def AverageCharsPerWord(infile):
             for el in stripped_words:
                 length = len(el)
                 wordlength += length
-                # if el == wordfind:
-                #       total += 1
+
 
     return "Average chars per word is: {0:.2f}".format(float(wordlength) / float(num_words))
 
 # print AverageCharsPerWord(infile)
 
 
-# AverageCharsPerWord(infile)
 
+#counts average words per paragragh using tab as paragraph delimiter
 def AverageWordsPara(infile):
     tabcounter = 0
     num_words = 0
@@ -65,6 +64,7 @@ def AverageWordsPara(infile):
 
 # print AverageWordsPara(infile)
 
+#consolidates all average functions
 def Averages(infile):
     a = AverageWordsPerline(infile)
     b = AverageCharsPerWord(infile)
